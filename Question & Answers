@@ -40,22 +40,35 @@ There are two types of Version Control Systems:
 
 Central Version Control System, Ex: Git, Bitbucket
 Distributed/Decentralized Version Control System, Ex: SVN
-Q6) What is Git and explain the difference between Git and SVN?
-Git is a source code management (SCM) tool which handles small as well as large projects with efficiency. It is basically used to store our repositories in remote server such as GitHub.
 
-      GIT	SVN
-Git is a Decentralized Version Control Tool	SVN is a Centralized Version Control Tool
-Git contains the local repo as well as the full history of the whole project on all the developers hard drive, so if there is a server outage , you can easily do recovery from your team mates local git repo.	SVN relies only on the central server to store all the versions of the project file
-Push and pull operations are fast	Push and pull operations are slower compared to Git
-It belongs to 3rd generation Version Control Tool	It belongs to 2nd generation Version Control tools
-Client nodes can share the entire repositories on their local system	Version history is stored on server-side repository
-Commits can be done offline too	Commits can be done only online
-Work are shared automatically by commit	Nothing is shared automatically
+Q6) What is Git and explain the difference between Git and SVN?
+Git is a source code management (SCM) tool which handles small as well as large projects with efficiency. 
+It is basically used to store our repositories in remote server such as GitHub.
+
+   ---GIT---	                                                    
+Git is a Decentralized Version Control Tool. 
+Git contains the local repo as well as the full history of the whole project on all the developers hard drive, so if there is a server outage, you can easily do recovery from your team mates local git repo.	                          
+Push and pull operations are fast	
+It belongs to 3rd generation Version Control Tool	
+Client nodes can share the entire repositories on their local system	
+Commits can be done offline too	
+Work are shared automatically by commit	
+
+---SVN---
+SVN is a Centralized Version Control Tool
+SVN relies only on the central server to store all the versions of the project file
+Push and pull operations are slower compared to Git
+It belongs to 2nd generation Version Control tools
+Version history is stored on server-side repository
+Commits can be done only online
+Nothing is shared automatically
+
 Q7) what language is used in Git?
 Git is written in C language, and since its written in C language its very fast and reduces the overhead of runtimes.
 
 Q8) what is SubGit?
-SubGit is a tool for migrating SVN to Git. It creates a writable Git mirror of a local or remote Subversion repository and uses both Subversion and Git if you like.
+SubGit is a tool for migrating SVN to Git. 
+It creates a writable Git mirror of a local or remote Subversion repository and uses both Subversion and Git if you like.
 
 Q9) how can you clone a Git repository via Jenkins?
 First, we must enter the e-mail and user name for your Jenkins system, then switch into your job directory and execute the “git config” command.
@@ -67,16 +80,26 @@ Good performance
 Idempotent
 Very Easy to learn
 Declarative not procedural
+
 Q11) what’s the use of Ansible?
-Ansible is mainly used in IT infrastructure to manage or deploy applications to remote nodes. Let’s say we want to deploy one application in 100’s of nodes by just executing one command, then Ansible is the one actually coming into the picture but should have some knowledge on Ansible script to understand or execute the same.
+Ansible is mainly used in IT infrastructure to manage or deploy applications to remote nodes. 
+Let’s say we want to deploy one application in 100’s of nodes by just executing one command, 
+then Ansible is the one actually coming into the picture but should have some knowledge on Ansible script to understand or execute the same.
 
 Q12) what’s the difference between Ansible Playbook and Roles?
-        Roles	   Playbooks
-Roles are reusable subsets of a play.	Playbooks contain Plays.
-A set of tasks for accomplishing certain role.	Mapps among hosts and roles.
-Example: common, webservers.	Example: site.yml, fooservers.yml, webservers.yml.
+       --- Roles	---   
+Roles are reusable subsets of a play.	
+A set of tasks for accomplishing certain role.	
+Example: common, webservers.	
+
+---Playbooks---
+Playbooks contain Plays.
+Maps among hosts and roles.
+Example: site.yml, fooservers.yml, webservers.yml.
+
  Q13) How do I see a list of all the ansible_ variables?
-Ansible by default gathers “facts” about the machines, and these facts can be accessed in Playbooks and in templates. To see a list of all the facts that are available about a machine, you can run the “setup” module as an ad-hoc action:
+Ansible by default gathers “facts” about the machines, and these facts can be accessed in Playbooks and in templates. 
+To see a list of all the facts that are available about a machine, you can run the “setup” module as an ad-hoc action:
 
 Ansible -m setup hostname
 
@@ -92,7 +115,8 @@ Q16) what is Docker Container?
 Docker Container is the running instance of Docker Image.
 
 Q17) Can we consider DevOps as Agile methodology?
-Of Course, we can!! The only difference between agile methodology and DevOps is that, agile methodology is implemented only for development section and DevOps implements agility on both development as well as operations section.
+Of Course, we can!! The only difference between agile methodology and DevOps is that, 
+agile methodology is implemented only for development section and DevOps implements agility on both development as well as operations section.
 
  Q18) what are the advantages of using Git?
 Data redundancy and replication
@@ -101,6 +125,7 @@ Only one. git directory per repository
 Superior disk utilization and network performance
 Collaboration friendly
 Git can use any sort of projects.
+
 Q19) what is kernel?
 A kernel is the lowest level of easily replaceable software that interfaces with the hardware in your computer.
 
@@ -267,6 +292,7 @@ For each code commit changes an automatic build report notification get generate
 To notify developers about build report success or failure, it can be integrated with LDAP mail server.
 Achieves continuous integration agile development and test-driven development environment.
 With simple steps, maven release project can also be automated.
+
 Q43) Which SCM tools does Jenkins supports?
 Source code management tools supported by Jenkins are below:
 
@@ -278,6 +304,7 @@ Mercurial
 Perforce
 Clearcase
 RTC
+
 Q44) What is Ansible?
 Ansible is a software configuration management tool to deploy an application using ssh without     any downtime. It is also used for management and configuration of software applications.  Ansible is developed in Python language.
 
@@ -298,6 +325,7 @@ Builds and Deployments
 Resolving issues when builds and deployments fails by coordinating and collaborating with the dev team
 Infrastructure maintenance
 Monitoring health of applications
+
 Q47) What are the challenges you faced in recent times?
 I need to implement trending technologies like Docker to automate the configuration management activities in my project by showing POC.
 
